@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:id="@+id/additem">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Food"
+            android:id="@+id/title"
+            android:textSize="30dp"
+            android:textColor="#bd226e32"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/item_image"
+            android:src="@drawable/empty_item"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/discription"
+            android:hint="Discription"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignRight="@+id/name"
+            android:layout_alignEnd="@+id/name"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/price"
+            android:layout_marginTop="29dp"
+            android:hint="Price"
+            android:layout_below="@+id/discription"
+            android:layout_alignLeft="@+id/discription"
+            android:layout_alignStart="@+id/discription"
+            android:layout_alignRight="@+id/discription"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="SUBMIT"
+            android:id="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/price"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_selector"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+</ScrollView><!-- From: file:/home/prashanth/NavigationDrawer1/app/src/main/res/layout/activity_add__item.xml -->

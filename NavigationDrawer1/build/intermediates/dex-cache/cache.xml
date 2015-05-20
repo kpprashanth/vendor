@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/prashanth/NavigationDrawer1/app/build/intermediates/exploded-aar/com.oguzdev/CircularFloatingActionMenu/1.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="/home/prashanth/NavigationDrawer1/app/build/intermediates/pre-dexed/debug/classes-477cc890f83346dc4abe7c2d65b0b69b128d9dd7.jar" />
+    </item>
+    <item
+        jar="/home/prashanth/NavigationDrawer1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="/home/prashanth/NavigationDrawer1/app/build/intermediates/pre-dexed/debug/classes-d58e6f14db8fdf94874bb1800e06b0400dc22e80.jar" />
+    </item>
+    <item
+        jar="/home/prashanth/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/prashanth/NavigationDrawer1/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-11e26076d5cfc12c43199ab8d1ae85278c8afc93.jar" />
+    </item>
+
+</items>

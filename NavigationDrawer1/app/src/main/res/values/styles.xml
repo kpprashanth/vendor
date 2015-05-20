@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme"  parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_select</item>
+        <item name="actionBarSize">70dip</item>
+        <item name="android:actionBarSize">70dip</item>
+    </style>
+    <style name="Theme.MyFancyTheme" parent="android:Theme.Holo">
+        <item name="android:homeAsUpIndicator">@drawable/cart_icon</item>
+    </style>
+
+</resources>

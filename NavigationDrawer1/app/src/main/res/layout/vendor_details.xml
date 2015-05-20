@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:id="@+id/details">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Details"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textColor="#b2ff1717" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name : "
+            android:id="@+id/name_tag"
+            android:layout_marginTop="33dp"
+            android:textSize="20dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginEnd="33dp"
+            android:layout_below="@+id/title"
+            android:layout_toLeftOf="@+id/name"
+            android:layout_toStartOf="@+id/name"
+            android:textColor="#ffd45285" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="xxxx"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/name_tag"
+            android:layout_alignLeft="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:textColor="#ff859ad5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="User id : "
+            android:id="@+id/userid_tag"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/name_tag"
+            android:layout_alignLeft="@+id/name_tag"
+            android:layout_alignStart="@+id/name_tag"
+            android:textSize="20dp"
+            android:textColor="#ffd45285"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="something@email.com"
+            android:id="@+id/user_id"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/userid_tag"
+            android:layout_alignLeft="@+id/edit"
+            android:layout_alignStart="@+id/edit"
+            android:textColor="#ff859ad5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Phone :"
+            android:id="@+id/phone_tag"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/userid_tag"
+            android:layout_alignRight="@+id/name_tag"
+            android:layout_alignEnd="@+id/name_tag"
+            android:textSize="20dp"
+            android:textColor="#ffd45285"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1231231220"
+            android:id="@+id/phone"
+            android:layout_alignTop="@+id/phone_tag"
+            android:layout_alignLeft="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:textSize="20dp"
+            android:textColor="#ff859ad5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address"
+        android:id="@+id/address_tag"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/phone_tag"
+        android:layout_alignLeft="@+id/phone_tag"
+        android:layout_alignStart="@+id/phone_tag"
+        android:textSize="20dp"
+        android:textColor="#ffd45285"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="address addresss address address address address address"
+        android:id="@+id/address"
+        android:layout_alignTop="@+id/address_tag"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:textSize="20dp"
+        android:textColor="#ff859ad5"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:id="@+id/edit"
+        android:background="@drawable/login_selector"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Station :"
+        android:id="@+id/station_tag"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/address"
+        android:layout_alignLeft="@+id/userid_tag"
+        android:layout_alignStart="@+id/userid_tag"
+        android:textSize="20dp"
+        android:textColor="#ffd45285"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Yaswanthpur"
+        android:id="@+id/station"
+        android:layout_alignTop="@+id/station_tag"
+        android:layout_toRightOf="@+id/name_tag"
+        android:layout_toEndOf="@+id/name_tag"
+        android:textSize="20dp"
+        android:textColor="#ff859ad5"/>
+
+
+</RelativeLayout>
+
+
+

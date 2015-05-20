@@ -1,0 +1,327 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff1f8ff">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+
+        >
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/login_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/White"
+                            android:visibility="visible"
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/username"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="54dp"
+                                android:layout_marginStart="54dp"
+                                android:layout_marginTop="118dp"
+                                android:id="@+id/imageView" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:hint="USERNAME"
+                                android:id="@+id/Logusername"
+                                android:layout_toRightOf="@+id/imageView"
+                                android:layout_toEndOf="@+id/imageView"
+                                android:layout_alignTop="@+id/imageView"
+                                android:layout_alignBottom="@+id/imageView" />
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/pass2"
+                                android:layout_centerVertical="true"
+                                android:layout_alignLeft="@+id/imageView"
+                                android:layout_alignStart="@+id/imageView"
+                                android:id="@+id/imageView2" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:hint="PASSWORD"
+                                android:ems="10"
+                                android:id="@+id/Logpass"
+                                android:layout_alignLeft="@+id/Logusername"
+                                android:layout_alignStart="@+id/Logusername"
+                                android:layout_alignBottom="@+id/imageView2"
+                                android:layout_alignTop="@+id/imageView2" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Login"
+                                android:layout_marginTop="57dp"
+                                android:src="@drawable/loginbutton"
+                                android:layout_below="@+id/imageView2"
+                                android:layout_centerHorizontal="true" />
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SignUp"
+                                android:id="@+id/Gosignup"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_selector"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/Login"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/signup_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/White"
+                                android:visibility="gone"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Sign Up"
+                                    android:id="@+id/SigUpTitle"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="#ff1084ff"
+                                    android:textSize="30dp"
+                                    android:textIsSelectable="false" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textEmailAddress"
+                                    android:ems="10"
+                                    android:id="@+id/SignUsername"
+                                    android:layout_below="@+id/SigUpTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="90dp"
+                                    android:hint="USERNAME(EMAIL)" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="phone"
+                                    android:ems="10"
+                                    android:id="@+id/Phone"
+                                    android:layout_below="@+id/SignUsername"
+                                    android:layout_alignLeft="@+id/SignUsername"
+                                    android:layout_alignStart="@+id/SignUsername"
+                                    android:layout_marginTop="40dp"
+                                    android:hint="PHONE" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPassword"
+                                    android:ems="10"
+                                    android:id="@+id/SignPass"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_below="@+id/Phone"
+                                    android:layout_alignLeft="@+id/Phone"
+                                    android:layout_alignStart="@+id/Phone"
+                                    android:hint="PASSWORD" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPassword"
+                                    android:ems="10"
+                                    android:id="@+id/SignCpass"
+                                    android:layout_below="@+id/SignPass"
+                                    android:layout_alignLeft="@+id/SignPass"
+                                    android:layout_alignStart="@+id/SignPass"
+                                    android:layout_marginTop="40dp"
+                                    android:hint="CONFIRM" />
+
+                                <Button
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sign Up"
+                                    android:id="@+id/Signup"
+                                    android:layout_below="@+id/SignCpass"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="38dp"
+                                    android:background="@drawable/login_selector"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Show"
+                                    android:id="@+id/SignPassShow"
+                                    android:layout_alignBottom="@+id/SignPass"
+                                    android:layout_toRightOf="@+id/SignPass"
+                                    android:layout_toEndOf="@+id/SignPass"
+                                    android:textColor="#ffffa362" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Show"
+                                    android:id="@+id/SignCpassShow"
+                                    android:layout_alignBottom="@+id/SignCpass"
+                                    android:layout_toRightOf="@+id/SignCpass"
+                                    android:layout_toEndOf="@+id/SignCpass"
+                                    android:textColor="#ffffa362" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView3"
+                                    android:src="@drawable/emailicon"
+                                    android:layout_alignTop="@+id/SignUsername"
+                                    android:layout_alignLeft="@+id/imageView6"
+                                    android:layout_alignStart="@+id/imageView6"
+                                    android:layout_alignBottom="@+id/SignUsername" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView4"
+                                    android:layout_above="@+id/SignCpass"
+                                    android:layout_toLeftOf="@+id/SignPass"
+                                    android:layout_toStartOf="@+id/SignPass"
+                                    android:src="@drawable/pass2"
+                                    android:layout_alignTop="@+id/SignPass" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView5"
+                                    android:layout_alignBottom="@+id/SignCpass"
+                                    android:layout_toLeftOf="@+id/SignCpass"
+                                    android:layout_toStartOf="@+id/SignCpass"
+                                    android:src="@drawable/pass2"
+                                    android:layout_alignTop="@+id/SignCpass" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView6"
+                                    android:src="@drawable/phone"
+                                    android:layout_above="@+id/SignPass"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_alignTop="@+id/Phone" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:ems="10"
+                                    android:id="@+id/vendor"
+                                    android:layout_below="@+id/SigUpTitle"
+                                    android:layout_alignLeft="@+id/SignUsername"
+                                    android:layout_alignStart="@+id/SignUsername"
+                                    android:layout_marginTop="20dp"
+                                    android:hint="NAME" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView7"
+                                    android:layout_alignBottom="@+id/vendor"
+                                    android:layout_toLeftOf="@+id/vendor"
+                                    android:layout_toStartOf="@+id/vendor"
+                                    android:src="@drawable/username"
+                                    android:layout_alignTop="@+id/vendor" />
+
+                            </RelativeLayout>
+
+
+
+                                <ListView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/order_list"
+                                    android:layout_gravity="start"
+                                    android:choiceMode="singleChoice"
+                                    android:divider="@color/Lavender"
+                                    android:dividerHeight="2dp"
+                                    android:background="@color/White"
+                                    android:visibility="gone"
+                                   >
+
+                                 </ListView>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         The drawer is given a fixed width in dp and extends the full height of
+         the container. A solid background is used for contrast
+         with the content view. -->
+
+                        <ListView
+                            android:id="@+id/left_drawer"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:choiceMode="singleChoice"
+                            android:divider="@color/Lavender"
+                            android:dividerHeight="2dp"
+                            android:background="@color/White"/>
+
+
+</android.support.v4.widget.DrawerLayout>
